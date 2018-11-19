@@ -1,0 +1,15 @@
+<app-lenguage-img [language]='language'></app-lenguage-img>
+<div class="content">
+  <div class = "header">
+    {{language.name}}
+  </div>
+  <div class="meta">
+    <div class="description">
+      {{language.description}}
+    </div>
+  </div>
+</div>
+<app-exper-display [experiance]="language.experiance"></app-exper-display>
+
+
+

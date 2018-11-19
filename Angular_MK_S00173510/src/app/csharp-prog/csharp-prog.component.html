@@ -1,0 +1,15 @@
+
+   <div class="ui items">
+
+      <app-prog-cont
+      *ngFor="let Lenguage of lenguage"
+      [language]="Lenguage">
+    </app-prog-cont> 
+
+    <p class="projectTitle" *ngFor="let git of github">
+      {{git.name}}
+      <a  class="projectLink" href="{{ git.html_url }}">{{ git.html_url }}</a>
+    </p>
+    
+  </div>
+   
